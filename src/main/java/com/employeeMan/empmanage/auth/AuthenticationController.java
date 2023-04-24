@@ -25,11 +25,5 @@ public class AuthenticationController {
     ) {
         return ResponseEntity.ok(service.authenticate(request));
     }
-
-    @GetMapping("/get/{email}")
-    public User getUser(
-            @PathVariable String email
-    ) {
-        return service.getUser(email);
-    }
+    
 }
