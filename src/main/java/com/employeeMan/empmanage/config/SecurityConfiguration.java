@@ -25,7 +25,8 @@ public class SecurityConfiguration {
                 .disable()
                 // white labeling i.e. allowing user to that sites without authentication . . .
                 .authorizeHttpRequests()
-                .requestMatchers("/api/v1/auth/**")
+//                .requestMatchers("/api/v1/auth/**")
+                .requestMatchers("/api/v1/**")
                 .permitAll()
                 // but any other request should be authenticated
                 .anyRequest()

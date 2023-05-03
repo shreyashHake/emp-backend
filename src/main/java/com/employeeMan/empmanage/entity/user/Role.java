@@ -2,5 +2,7 @@ package com.employeeMan.empmanage.entity.user;
 
 public enum Role {
     USER,
-    ADMIN
+    ADMIN,
+    HR,
+    FINANCE
 }
